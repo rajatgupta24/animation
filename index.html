@@ -5,6 +5,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<style type="text/css">
+			*{
+				background-color: pink;
+			}
 			.heart{
 				background-color: #DB095B;
 				position: absolute;
@@ -14,7 +17,9 @@
 				height: 200px;
 				transform: rotate(-45deg);
 				animation-name: heart;
-				animation-duration: 20s
+				animation-duration: 20s;
+				animation-iteration-count: 10;
+
 			}
 			.heart::after{
 				background-color: #DB095B;
@@ -62,8 +67,15 @@
 				60%{
 					background-color: violet;
 				}
+				80%{
+					background-color: purple;
+				}
+				90%{
+					background-color: magenta;
+				}
 				100%{
-					background-color: black;
+					background-color: crimson;
+				}
 			}
 		</style>
 	</head>
